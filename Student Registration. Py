@@ -1,0 +1,41 @@
+students = {}
+
+def register_student():
+    student_id = input("Enter Student ID: ")
+    name = input("Enter Student Name: ")
+    age = input("Enter Age: ")
+    course = input("Enter Course: ")
+
+    students[student_id] = {"Name": name, "Age": age, "Course": course}
+    print("\nStudent Registered Successfully!\n")
+
+def display_students():
+    if not students:
+        print("No students registered yet.")
+        return
+
+    print("\nRegistered Students:")
+    for sid, details in students.items():
+        print(f"ID: {sid}, Name: {details['Name']}, Age: {details['Age']}, Course: {details['Course']}")
+    print()
+
+def main():
+    while True:
+        print("1. Register Student")
+        print("2. Display Students")
+        print("3. Exit")
+        
+        choice = input("Enter your choice: ")
+
+        if choice == "1":
+            register_student()
+        elif choice == "2":
+            display_students()
+        elif choice == "3":
+            print("Exiting...")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+if __name__ == "__main__":
+    main()
