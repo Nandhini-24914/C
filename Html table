@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Table</title>
+</head>
+<body>
+    <h2>Student Details</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>20</td>
+            <td>Computer Science</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>22</td>
+            <td>Mathematics</td>
+        </tr>
+    </table>
+</body>
+</html>
